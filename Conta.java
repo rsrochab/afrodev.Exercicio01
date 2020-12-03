@@ -1,5 +1,5 @@
 package afrodev.Exercicio01;
-
+//Desenvolvido por Rodrigo Brito
 public class Conta {
 
 	private double saldo;
@@ -9,7 +9,7 @@ public class Conta {
 
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		System.out.println("O total de contas é " + Conta.total);
+		System.out.println("O total de contas Ã© " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
 		this.saldo = 0;
