@@ -1,5 +1,5 @@
 package afrodev.Exercicio01;
-
+//Desenvolvido por Rodrigo Brito
 import java.util.Scanner;
 
 public class Exercicio01 {
@@ -7,21 +7,21 @@ public class Exercicio01 {
 
 		Conta primeiraConta = new Conta(6646, 969060);
 		primeiraConta.deposita(0);
-		System.out.println("Meu saldo atual é de " + primeiraConta.getSaldo() + " Reais");
+		System.out.println("Meu saldo atual Ã© de " + primeiraConta.getSaldo() + " Reais");
 
 		System.out.println("------------------------------------");
 		System.out.println("Digite o valor que queira depositar");
 		Scanner scan = new Scanner(System.in);
 		double depositar = scan.nextDouble();
 		primeiraConta.deposita(depositar);
-		System.out.println("Após o depósito, o meu saldo é de: " + primeiraConta.getSaldo() + " Reais");
+		System.out.println("ApÃ³s o depÃ³sito, o meu saldo Ã© de: " + primeiraConta.getSaldo() + " Reais");
 		System.out.println("------------------------------------");
 
 		System.out.println("------------------------------------");
 		System.out.println("Digite o valor que queira Sacar");
 		double sacar = scan.nextDouble();
 		primeiraConta.saca(sacar);
-		System.out.println("Após o saque, o meu saldo é de: " + primeiraConta.getSaldo() + " Reais");
+		System.out.println("ApÃ³s o saque, o meu saldo Ã© de: " + primeiraConta.getSaldo() + " Reais");
 		System.out.println("------------------------------------");
 
 		// Criando a segunda conta
@@ -39,11 +39,11 @@ public class Exercicio01 {
 			System.out.println("Transferencia realizada com sucesso");
 
 		} else {
-			System.out.println("Não foi possível realizar a transferencia. Saldo Insuficiente");
+			System.out.println("NÃ£o foi possÃ­vel realizar a transferencia. Saldo Insuficiente");
 
 		}
-		System.out.println("O saldo da conta " + primeiraConta.getNumero() + " é " + primeiraConta.getSaldo());
-		System.out.println("O saldo da conta " + segundaConta.getNumero() + " é " + segundaConta.getSaldo());
+		System.out.println("O saldo da conta " + primeiraConta.getNumero() + " Ã© " + primeiraConta.getSaldo());
+		System.out.println("O saldo da conta " + segundaConta.getNumero() + " Ã© " + segundaConta.getSaldo());
 
 	}
 }
